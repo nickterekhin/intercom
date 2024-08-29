@@ -89,8 +89,8 @@ public class IntercomApp {
     {
         //Set<String> usersNamesList = db.userInfoList.getAllUsersNames("/PO");
         Set<String> usersNamesList = db.userInfoList.getAllNotExistsUsersByEmail();
-        Intercom.setApiKey("b9793b7965649c5c3723cc2838b775ed5aa0b8e4");
-        Intercom.setAppID("s7uinpvc");
+        Intercom.setApiKey("");
+        Intercom.setAppID("");
         Map<String,String> params = new HashMap<>();
         System.out.println(usersNamesList.size());
         int i=0;
@@ -120,8 +120,8 @@ public class IntercomApp {
     public static void deleteUserByEmail(String email, Logger log)
     {
         //vvanderveen@pinkoffice.com
-        Intercom.setApiKey("b9793b7965649c5c3723cc2838b775ed5aa0b8e4");
-        Intercom.setAppID("s7uinpvc");
+        Intercom.setApiKey("");
+        Intercom.setAppID("");
         Map<String,String> params = new HashMap<>();
         params.put("email", email);
         User us = null;
@@ -142,8 +142,8 @@ public class IntercomApp {
     }
     public static void deleteUsers(List<UserInfo> uList,Logger log)
     {
-        Intercom.setApiKey("b9793b7965649c5c3723cc2838b775ed5aa0b8e4");
-        Intercom.setAppID("s7uinpvc");
+        Intercom.setApiKey("");
+        Intercom.setAppID("");
         Map<String,String> params = new HashMap<>();
         for(UserInfo item : uList)
         {
@@ -166,8 +166,8 @@ public class IntercomApp {
 
     public static void updateUserId(String oldUserId, String newUserId, Logger log)
     {
-        Intercom.setApiKey("b9793b7965649c5c3723cc2838b775ed5aa0b8e4");
-        Intercom.setAppID("s7uinpvc");
+        Intercom.setApiKey("");
+        Intercom.setAppID("");
         Map<String,String> params = new HashMap<>();
         params.put("user_id", oldUserId);
 
